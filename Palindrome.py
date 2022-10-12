@@ -25,7 +25,7 @@ def isPalindrome(s):
     return False
 
  
-//change by aryan
+
 # main function
 
 s = "english"
