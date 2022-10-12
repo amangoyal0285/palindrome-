@@ -1,43 +1,18 @@
-# function to check string is
-
-# palindrome or not
-
+# function to check string is palindrome or not
+def display(string):
+    if isPalindrome(string):
+        print("Yes")
+    else:
+        print("No")
 def isPalindrome(s):
-
- 
-
-    # Using predefined function to
-
-    # reverse to string print(s)
-
-    rev = ''.join(reversed(s))
-
- 
-
-    # Checking if both string are
-
-    # equal or not
-
-    if (s == rev):
-
-        return True
-
-    return False
-
- 
-//change by aryan
-# main function
-
+    length = len(s)
+    i = length - 1
+    for j in range(length//2):
+        if s[i] != s[j]:
+            return False
+        i -= 1
+    return True
+s = "hinih"
+display(s)
 s = "hindi"
-
-ans = isPalindrome(s)
-
- 
-
-if (ans):
-
-    print("Yes")
-
-else:
-
-    print("No")
+display(s)
